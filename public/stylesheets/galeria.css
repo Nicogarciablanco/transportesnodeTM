@@ -1,0 +1,19 @@
+.galeria .foto{
+    border: 1px solid #ccc;
+    /* display: inline-block; */
+    float: left;
+    padding: 3px;
+    width: 18%;
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-bottom: 10px;
+}
+
+.galeria .foto img{
+    width: 100%;
+    display: block;
+}
+
+.galeria .foto:nth-child(n5+1){
+    margin-left: 0;
+}

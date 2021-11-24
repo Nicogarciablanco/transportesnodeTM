@@ -1,0 +1,78 @@
+/* font-family: Open sans:
+ light 300 italic, regular 400 
+ y bold 700
+ font-family: 'Open Sans', sans-serif;*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+ }
+ 
+header{
+     background-color: #2e64a1;
+     padding: 16px 0;
+ }
+
+ header h1{
+     color: white;
+     font-size: 2.5em;/* tamaaño de la fuente */
+     font-weight: 100;/* grosor de la fuente */
+     font-style: italic;/* estilo de la fuente */
+     display:inline-block;/* pone la palabra en linea con la imagen */
+    position: relative; /* hace que la palabra la pueda mover */
+    bottom: 35px; /* sube la palabra alrededor de la imagen */
+}
+
+nav{
+    background-color: #6da9ed;
+    margin-bottom: 25px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    width: 16%;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+nav ul li a:hover{
+    background-color: #4c76a5;
+    padding-bottom: 10px;
+}
+
+nav ul li a.activo{
+    background-color: #4c76a5;
+    padding-bottom: 10px;
+}
+
+footer{
+    background-color: #ccc;
+    padding: 25px 0;
+    text-align: center;
+    clear: both;/* elemeneto va de punta a punta */
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+}
+

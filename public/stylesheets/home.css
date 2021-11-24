@@ -1,0 +1,35 @@
+
+.bienvenidos{
+    width: 75%;
+    float: left;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+.testimonios{
+    width: 25%;
+    float: right;
+}
+
+.bienvenidos p{
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.testimonio{
+    background-color: rgb(226, 223, 223);
+    padding: 12px;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+    display: block;
+}
+
+.testimonio .autor{
+font-size: 11px;
+text-align: center;
+display: block
+}
