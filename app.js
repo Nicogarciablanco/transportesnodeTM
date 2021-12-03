@@ -34,7 +34,7 @@ app.use(session({
   secret: '01234567899876543210',
   resave: false,
   saveUninitialized: true,
-  cookie: {maxAge: 60000}
+  //cookie: {maxAge: 60000}
 }))
 
 secured = async function (req, res, next) {
