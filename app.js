@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var fileupload = require('express-fileupload')
 
 require('dotenv').config(); //para que cargue los datos del .env
 var session = require('express-session');
@@ -14,7 +15,8 @@ var galeriaRouter = require('./routes/galeria'); //galeria.js
 var novedadesRouter = require('./routes/novedades'); //novedades.js
 var contactoRouter = require('./routes/contacto'); //contacto.js
 var loginRouter = require('./routes/admin/login'); //admin/login.js
-var adminNovedadesRouter = require('./routes/admin/novedades') //admin/novedades.js
+var adminNovedadesRouter = require('./routes/admin/novedades'); //admin/novedades.js
+const fileUpload = require('express-fileupload');
 
 var app = express();
 
@@ -50,6 +52,11 @@ secured = async function (req, res, next) {
     console.log(error)
   }
 } //cierra secured
+
+app.use(fileUpload({
+  useTempFiles:true,
+  tempFileDir:'/tmp/'
+})); //genera un temporario antes de subir dependiendo el peso
 
 //app.get('/nosotros', function(req,res,next){
 //res.send('Hola Curso')
